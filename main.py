@@ -17,4 +17,9 @@ for i, char in enumerate(story):
         words.add(word)
         start_of_word = -1
 
-print("Words found:", words)
+answers = {}
+
+for word in words:
+    answer = input(f"Please enter a word for {word}: ")
+    answers[word] = answer 
+print(answers)
